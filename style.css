@@ -1487,4 +1487,221 @@ a {
             25px;
     }
 
+}                                                                                                                                        /* ========================================
+   AI GUIDE PAGE
+========================================= */
+
+
+/* Back to AI Prompt Hub */
+
+.back-link {
+
+    display: inline-block;
+
+    margin-bottom: 30px;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    text-decoration: none;
+
+    transition: opacity 0.2s ease;
+
 }
+
+
+.back-link:hover {
+
+    opacity: 0.7;
+
+}
+
+
+
+/* Quick Comparison */
+
+.comparison-wrapper {
+
+    margin: 60px 0;
+
+}
+
+
+.comparison-wrapper h3 {
+
+    margin-bottom: 10px;
+
+}
+
+
+.comparison-wrapper > p {
+
+    margin-bottom: 30px;
+
+}
+
+
+
+/* Comparison Table */
+
+.comparison-table {
+
+    width: 100%;
+
+    overflow-x: auto;
+
+    margin-top: 30px;
+
+    border-radius: 12px;
+
+}
+
+
+.comparison-table table {
+
+    width: 100%;
+
+    min-width: 750px;
+
+    border-collapse: collapse;
+
+}
+
+
+.comparison-table th,
+.comparison-table td {
+
+    padding: 18px;
+
+    text-align: left;
+
+    border-bottom: 1px solid #e5e7eb;
+
+}
+
+
+.comparison-table th {
+
+    font-weight: 700;
+
+}
+
+
+.comparison-table tr:hover {
+
+    background-color: #f8fafc;
+
+}
+
+
+
+/* Editor's Pick */
+
+.editor-pick {
+
+    display: inline-block;
+
+    margin-bottom: 15px;
+
+    padding: 7px 12px;
+
+    border-radius: 20px;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    letter-spacing: 0.8px;
+
+}
+
+
+
+/* Pros and Cons */
+
+.pros-cons {
+
+    margin-top: 20px;
+
+    padding-left: 20px;
+
+}
+
+
+.pros-cons li {
+
+    margin-bottom: 8px;
+
+}
+
+
+
+/* Guide Tool Cards */
+
+.guide-tool {
+
+    margin-top: 50px;
+
+    padding: 35px;
+
+    border-radius: 16px;
+
+}
+
+
+.guide-tool h3 {
+
+    margin-top: 0;
+
+    margin-bottom: 15px;
+
+}
+
+
+
+/* Mobile Guide Improvements */
+
+@media (max-width: 768px) {
+
+
+    .comparison-wrapper {
+
+        margin: 40px 0;
+
+    }
+
+
+    .comparison-table {
+
+        overflow-x: auto;
+
+        -webkit-overflow-scrolling: touch;
+
+    }
+
+
+    .comparison-table table {
+
+        min-width: 700px;
+
+    }
+
+
+    .guide-tool {
+
+        padding: 25px;
+
+        margin-top: 35px;
+
+    }
+
+
+    .back-link {
+
+        margin-bottom: 20px;
+
+    }
+
+
+} 

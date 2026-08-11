@@ -1705,3 +1705,178 @@ a {
 
 
 } 
+/* ========================================
+   AI PROMPT HUB — SOLUTION PAGE V2
+   ======================================== */
+
+/* Prevent sticky header from covering page content */
+main {
+    position: relative;
+    z-index: 1;
+}
+
+.section {
+    position: relative;
+}
+
+.back-link {
+    display: inline-block;
+    margin-bottom: 36px;
+    color: var(--text-secondary);
+}
+
+.back-link:hover {
+    color: var(--text-main);
+}
+
+
+/* Solution page headings */
+
+.section h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: clamp(38px, 5vw, 58px);
+    line-height: 1.1;
+    letter-spacing: -2px;
+    margin-bottom: 18px;
+}
+
+.section h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: clamp(28px, 3vw, 38px);
+    line-height: 1.2;
+    margin-bottom: 18px;
+}
+
+.section h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 21px;
+    line-height: 1.3;
+    margin-bottom: 10px;
+}
+
+
+/* Top Pick */
+
+.featured-card {
+    margin-top: 24px;
+}
+
+.featured-card .tool-label {
+    margin-bottom: 12px;
+}
+
+.featured-card .tool-content p {
+    color: var(--text-secondary);
+}
+
+
+/* Remove broken emoji-style rating appearance */
+
+.featured-card .tool-content > p:first-of-type {
+    margin-bottom: 20px;
+}
+
+
+/* Other options */
+
+.guide-tool {
+    margin-top: 0;
+    padding: 24px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-medium);
+    background: rgba(255, 255, 255, 0.025);
+}
+
+.guide-tool + .guide-tool {
+    margin-top: 14px;
+}
+
+.guide-tool h3 {
+    margin-bottom: 8px;
+}
+
+.guide-tool p {
+    color: var(--text-secondary);
+    margin: 0;
+}
+
+
+/* Three-step How It Works */
+
+.guide-content {
+    max-width: 900px;
+}
+
+.guide-content > h2 {
+    margin-top: 70px;
+}
+
+.guide-content > h3 {
+    margin-top: 40px;
+}
+
+.guide-content > p {
+    color: var(--text-secondary);
+}
+
+
+/* Quick Answer */
+
+.quick-answer {
+    margin-top: 60px;
+    padding: 30px;
+    border: 1px solid rgba(124, 92, 255, 0.25);
+    border-radius: var(--radius-medium);
+    background:
+        linear-gradient(
+            135deg,
+            rgba(124, 92, 255, 0.10),
+            rgba(0, 212, 255, 0.05)
+        );
+}
+
+.quick-answer h2 {
+    margin-top: 0;
+}
+
+
+/* Affiliate disclosure */
+
+.affiliate-disclosure {
+    margin-top: 28px;
+    color: var(--text-muted);
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+    .section h1 {
+        font-size: 38px;
+        letter-spacing: -1.5px;
+    }
+
+    .section h2 {
+        font-size: 30px;
+    }
+
+    .featured-card {
+        margin-top: 20px;
+    }
+
+    .guide-tool {
+        padding: 22px;
+    }
+
+    .guide-content > h2 {
+        margin-top: 55px;
+    }
+
+    .quick-answer {
+        padding: 24px;
+    }
+
+}

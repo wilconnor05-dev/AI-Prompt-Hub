@@ -1092,7 +1092,7 @@ a {
         relative;
 
     z-index:
-        1;
+        10;
 
     max-width:
         700px;

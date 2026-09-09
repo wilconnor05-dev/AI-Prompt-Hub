@@ -1880,3 +1880,138 @@ main {
     }
 
 }
+/* ========================================
+   VIDEO TOOLS GRID
+   ======================================== */
+
+.video-tools-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+    align-items: stretch;
+}
+
+
+/* ========================================
+   VIDEO TOOL CARD
+   ======================================== */
+
+.video-tool-card {
+    display: flex;
+    flex-direction: column;
+    min-height: 280px;
+    padding: 32px;
+    box-sizing: border-box;
+}
+
+
+/* Category label */
+
+.video-tool-card > span {
+    display: inline-block;
+    margin-bottom: 16px;
+    color: #927BFF;
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 1.4;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+}
+
+
+/* Tool name */
+
+.video-tool-card h3 {
+    margin: 0 0 14px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    line-height: 1.25;
+}
+
+
+/* Description */
+
+.video-tool-card p {
+    margin: 0;
+    color: var(--text-secondary);
+    font-size: 14px;
+    line-height: 1.7;
+    max-width: 460px;
+}
+
+
+/* CTA */
+
+.video-tool-card > a {
+    display: inline-flex;
+    align-items: center;
+    width: fit-content;
+    margin-top: auto;
+    padding-top: 24px;
+    color: var(--text-primary);
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+
+.video-tool-card > a:hover {
+    color: #927BFF;
+    transform: translateX(3px);
+}
+
+
+/* Hover effect */
+
+.video-tool-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(124, 92, 255, 0.35);
+    background: rgba(124, 92, 255, 0.06);
+}
+
+
+/* ========================================
+   TABLET
+   ======================================== */
+
+@media (max-width: 900px) {
+
+    .video-tools-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;
+    }
+
+    .video-tool-card {
+        min-height: 270px;
+        padding: 28px;
+    }
+
+}
+
+
+/* ========================================
+   MOBILE
+   ======================================== */
+
+@media (max-width: 640px) {
+
+    .video-tools-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .video-tool-card {
+        min-height: auto;
+        padding: 26px;
+    }
+
+    .video-tool-card h3 {
+        font-size: 22px;
+    }
+
+    .video-tool-card > a {
+        padding-top: 22px;
+    }
+
+}

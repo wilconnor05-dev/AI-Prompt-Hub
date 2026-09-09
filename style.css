@@ -2724,3 +2724,452 @@ main {
     }
 
 }
+/* ========================================
+   PREMIUM AI GUIDES
+========================================= */
+
+
+/* ----------------------------------------
+   SECTION ANCHOR
+----------------------------------------- */
+
+#guides {
+    scroll-margin-top: 96px;
+}
+
+
+/* ----------------------------------------
+   GRID
+----------------------------------------- */
+
+.premium-guides-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 20px;
+}
+
+
+/* ----------------------------------------
+   GUIDE CARD
+----------------------------------------- */
+
+.premium-guide-card {
+    position: relative;
+
+    min-height: 390px;
+
+    padding: 30px;
+
+    display: flex;
+    flex-direction: column;
+
+    overflow: hidden;
+
+    border:
+        1px solid
+        rgba(255, 255, 255, 0.09);
+
+    border-radius: 22px;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(255, 255, 255, 0.045),
+            rgba(255, 255, 255, 0.018)
+        );
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        background 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+/* ----------------------------------------
+   TOP GLOW
+----------------------------------------- */
+
+.premium-guide-card::before {
+    content: "";
+
+    position: absolute;
+
+    width: 240px;
+    height: 240px;
+
+    top: -140px;
+    right: -100px;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(124, 92, 255, 0.18),
+            transparent 68%
+        );
+
+    opacity: 0;
+
+    transition:
+        opacity 0.35s ease;
+
+    pointer-events: none;
+}
+
+
+/* ----------------------------------------
+   BOTTOM GLOW
+----------------------------------------- */
+
+.premium-guide-card::after {
+    content: "";
+
+    position: absolute;
+
+    width: 220px;
+    height: 120px;
+
+    left: 50%;
+    bottom: -90px;
+
+    transform:
+        translateX(-50%);
+
+    background:
+        radial-gradient(
+            ellipse,
+            rgba(0, 212, 255, 0.07),
+            transparent 70%
+        );
+
+    opacity: 0;
+
+    transition:
+        opacity 0.35s ease;
+
+    pointer-events: none;
+}
+
+
+/* ----------------------------------------
+   HOVER
+----------------------------------------- */
+
+.premium-guide-card:hover {
+
+    transform:
+        translateY(-7px);
+
+    border-color:
+        rgba(124, 92, 255, 0.38);
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(124, 92, 255, 0.075),
+            rgba(255, 255, 255, 0.02)
+        );
+
+    box-shadow:
+        0 20px 55px
+        rgba(0, 0, 0, 0.28);
+}
+
+
+.premium-guide-card:hover::before,
+.premium-guide-card:hover::after {
+    opacity: 1;
+}
+
+
+/* ----------------------------------------
+   CARD TOP
+----------------------------------------- */
+
+.guide-card-top {
+    position: relative;
+    z-index: 1;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+
+    margin-bottom: 34px;
+}
+
+
+/* ----------------------------------------
+   CATEGORY
+----------------------------------------- */
+
+.guide-category {
+    display: inline-flex;
+
+    align-items: center;
+
+    padding:
+        7px 11px;
+
+    border:
+        1px solid
+        rgba(124, 92, 255, 0.22);
+
+    border-radius:
+        999px;
+
+    background:
+        rgba(124, 92, 255, 0.07);
+
+    color:
+        #a995ff;
+
+    font-size:
+        10px;
+
+    font-weight:
+        700;
+
+    letter-spacing:
+        1.4px;
+}
+
+
+/* ----------------------------------------
+   NUMBER
+----------------------------------------- */
+
+.guide-number {
+    color:
+        rgba(255, 255, 255, 0.22);
+
+    font-size:
+        12px;
+
+    font-weight:
+        600;
+
+    letter-spacing:
+        1px;
+}
+
+
+/* ----------------------------------------
+   CONTENT
+----------------------------------------- */
+
+.guide-card-content {
+    position: relative;
+
+    z-index: 1;
+}
+
+
+.premium-guide-card h3 {
+    margin:
+        0 0 16px;
+
+    font-family:
+        'Poppins',
+        sans-serif;
+
+    font-size:
+        22px;
+
+    line-height:
+        1.35;
+
+    letter-spacing:
+        -0.4px;
+}
+
+
+.premium-guide-card p {
+    margin:
+        0;
+
+    color:
+        var(--text-secondary);
+
+    font-size:
+        14px;
+
+    line-height:
+        1.75;
+}
+
+
+/* ----------------------------------------
+   LINK
+----------------------------------------- */
+
+.guide-link {
+    position: relative;
+
+    z-index: 1;
+
+    margin-top: auto;
+    padding-top: 30px;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    width: fit-content;
+
+    color:
+        #b9a9ff;
+
+    font-size:
+        14px;
+
+    font-weight:
+        600;
+
+    transition:
+        color 0.25s ease,
+        transform 0.25s ease;
+}
+
+
+.guide-link span {
+    font-size:
+        17px;
+
+    line-height:
+        1;
+
+    transition:
+        transform 0.25s ease;
+}
+
+
+.guide-link:hover {
+    color:
+        #ffffff;
+
+    transform:
+        translateX(2px);
+}
+
+
+.guide-link:hover span {
+    transform:
+        translateX(3px);
+}
+
+
+/* ----------------------------------------
+   GUIDE HEADING
+----------------------------------------- */
+
+#guides .center-heading {
+    max-width:
+        700px;
+
+    margin-left:
+        auto;
+
+    margin-right:
+        auto;
+
+    margin-bottom:
+        48px;
+}
+
+
+#guides .center-heading h2 {
+    margin-bottom:
+        14px;
+}
+
+
+#guides .center-heading > p:last-child {
+    max-width:
+        620px;
+
+    margin-left:
+        auto;
+
+    margin-right:
+        auto;
+
+    color:
+        var(--text-secondary);
+
+    line-height:
+        1.7;
+}
+
+
+/* ----------------------------------------
+   TABLET
+----------------------------------------- */
+
+@media (max-width: 900px) {
+
+    .premium-guides-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+
+    .premium-guide-card {
+        min-height:
+            360px;
+    }
+
+}
+
+
+/* ----------------------------------------
+   MOBILE
+----------------------------------------- */
+
+@media (max-width: 600px) {
+
+    .premium-guides-grid {
+        grid-template-columns:
+            1fr;
+
+        gap:
+            16px;
+    }
+
+
+    .premium-guide-card {
+        min-height:
+            320px;
+
+        padding:
+            26px;
+    }
+
+
+    .premium-guide-card h3 {
+        font-size:
+            20px;
+    }
+
+
+    .guide-card-top {
+        margin-bottom:
+            28px;
+    }
+
+
+    #guides .center-heading {
+        margin-bottom:
+            36px;
+    }
+
+}

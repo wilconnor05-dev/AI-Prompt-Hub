@@ -3705,3 +3705,196 @@ main {
     }
 
 }
+/* ========================================
+   TAPFIlIATE PARTNER
+======================================== */
+
+.tapfiliate-section {
+    padding-top: 40px;
+}
+
+.tapfiliate-card {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1.35fr 0.65fr;
+    gap: 50px;
+    padding: 56px;
+    border: 1px solid rgba(124, 92, 255, 0.22);
+    border-radius: 28px;
+    background:
+        linear-gradient(
+            135deg,
+            rgba(124, 92, 255, 0.10),
+            rgba(255, 255, 255, 0.02)
+        ),
+        rgba(12, 12, 20, 0.72);
+    overflow: hidden;
+    isolation: isolate;
+}
+
+.tapfiliate-glow {
+    position: absolute;
+    width: 420px;
+    height: 420px;
+    top: -220px;
+    left: -160px;
+    background: rgba(124, 92, 255, 0.16);
+    filter: blur(90px);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.tapfiliate-content {
+    position: relative;
+    z-index: 2;
+}
+
+.tapfiliate-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    margin-bottom: 20px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    color: #9d8cff;
+}
+
+.tapfiliate-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #9d8cff;
+    box-shadow: 0 0 14px rgba(157, 140, 255, 0.8);
+}
+
+.tapfiliate-content h2 {
+    max-width: 650px;
+    margin: 0 0 18px;
+    font-size: clamp(32px, 4vw, 50px);
+    line-height: 1.08;
+    letter-spacing: -0.035em;
+}
+
+.tapfiliate-content p {
+    max-width: 620px;
+    margin: 0;
+    font-size: 17px;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.68);
+}
+
+.tapfiliate-actions {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-top: 30px;
+}
+
+.tapfiliate-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 21px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #7c5cff, #9b7cff);
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    box-shadow: 0 12px 30px rgba(124, 92, 255, 0.22);
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.tapfiliate-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 16px 34px rgba(124, 92, 255, 0.32);
+}
+
+.tapfiliate-button span {
+    font-size: 18px;
+    line-height: 1;
+}
+
+.tapfiliate-note {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.42);
+}
+
+.tapfiliate-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 14px;
+}
+
+.tapfiliate-side-card {
+    display: flex;
+    flex-direction: column;
+    padding: 22px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.025);
+}
+
+.tapfiliate-side-icon {
+    margin-bottom: 14px;
+    font-size: 22px;
+    color: #9d8cff;
+}
+
+.tapfiliate-side-title {
+    margin-bottom: 6px;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.tapfiliate-side-text {
+    font-size: 13px;
+    line-height: 1.55;
+    color: rgba(255, 255, 255, 0.52);
+}
+
+
+/* Mobile */
+
+@media (max-width: 800px) {
+
+    .tapfiliate-card {
+        grid-template-columns: 1fr;
+        gap: 32px;
+        padding: 34px 24px;
+        border-radius: 22px;
+    }
+
+    .tapfiliate-content h2 {
+        font-size: 34px;
+    }
+
+    .tapfiliate-content p {
+        font-size: 15px;
+    }
+
+    .tapfiliate-actions {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    .tapfiliate-side {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+@media (max-width: 520px) {
+
+    .tapfiliate-side {
+        grid-template-columns: 1fr;
+    }
+
+}

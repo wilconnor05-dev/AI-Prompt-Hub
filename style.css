@@ -976,16 +976,6 @@ a {
     gap: 22px;
 }
 
-    display:
-        grid;
-
-    grid-template-columns:
-        repeat(2, 1fr);
-
-    gap:
-        18px;
-}
-
 
 .guide-card {
 
@@ -1067,7 +1057,6 @@ a {
     color:
         #ffffff;
 }
-
 
 /* ========================================
    CTA

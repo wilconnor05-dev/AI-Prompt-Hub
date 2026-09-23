@@ -1804,7 +1804,8 @@ main {
 /* Three-step How It Works */
 
 .guide-content {
-    max-width: 900px;
+    width: 100%;
+    max-width: none;
 }
 
 .guide-content > h2 {
